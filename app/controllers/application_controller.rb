@@ -33,7 +33,7 @@ class ApplicationController < Sinatra::Base
     #grab the user's info from the params hash
     #look to match the info against the existing entries in the user database
     #if a match is found, the user is signed in
-
+    puts params
     redirect '/users/home'
   end
 

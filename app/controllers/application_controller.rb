@@ -27,7 +27,7 @@ class ApplicationController < Sinatra::Base
   end
 
   post '/sessions' do #receives the post request when user submitted the login form
-    #grab the user's info from the params hash 
+    #grab the user's info from the params hash
     #look to match the info against the existing entries in the user database
     #if a match is found, the user is signed in
 

@@ -34,7 +34,7 @@ class ApplicationController < Sinatra::Base
     #look to match the info against the existing entries in the user database
     #if a match is found, the user is signed in
     @user = User.find_by(email: params["email"], password: params["password"])
-    if @user  
+    if @user
       session[:id] = @user.id
       redirect '/users/home'
     else

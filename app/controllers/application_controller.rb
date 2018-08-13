@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
     erb :home
   end
 
-  get '/registrations/signup' do #render the sign-up form view
+  get '/registrations/signup' do #renders the sign-up form view
     erb :'/registrations/signup'
   end
 

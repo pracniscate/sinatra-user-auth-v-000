@@ -19,7 +19,7 @@ class ApplicationController < Sinatra::Base
     #get the new user's info from the params hash
     #create a new user
     #sign in the user
-    @user = User.new(name: params["name"], email: params["email"], params["password"])
+    @user = User.new(name: params["name"], email: params["email"], password: params["password"])
     @user.save
     session[:id] = @user.id
     redirect '/users/home'

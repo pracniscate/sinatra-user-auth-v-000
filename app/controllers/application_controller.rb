@@ -39,7 +39,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/sessions/logout' do #logs the user out by clearing the session hash
-
+    session.clear
     redirect '/'
   end
 
